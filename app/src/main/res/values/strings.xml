@@ -11,6 +11,12 @@
     <string name="home_button_start">Empezar</string>
     <string name="home_button_settings">Ajustes</string>
 
+    <string name="slot_button_free_coins">Fichas gratis</string>
+    <string name="slot_button_spin">Jugar</string>
+    <string name="slot_checkbot_autoplay">Automático</string>
+    <string name="slot_button_max_bet">Apuesta max</string>
+    <string name="slot_textview_bet">Apuesta</string>
+    <string name="slot_textview_win">Ganado</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
