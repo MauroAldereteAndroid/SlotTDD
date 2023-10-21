@@ -3,7 +3,7 @@ package com.maurodev.slottdd.data
 /**
  * Enumerado con los valores posibles.
  */
-enum class SlotValue(id: Int, value: String) {
+enum class SlotValue(val id: Int, val value: String) {
     TWO(2, "Dos"),
     THREE(3, "Tres"),
     FOUR(4, "Cuatro"),
@@ -15,5 +15,6 @@ enum class SlotValue(id: Int, value: String) {
     TEN(10, "Diez"),
     ELEVEN(11, "Once"),
     TWELVE(12, "Doce"),
-    THIRTEEN(13, "Trece")
+    THIRTEEN(13, "Trece");
+
 }

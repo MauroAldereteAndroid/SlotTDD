@@ -14,7 +14,7 @@ class ShuffleMixer {
      * @return listado
      */
     fun obtainSlotFirstReel(): MutableList<Int> {
-        firstReel.clear()
+        firstReel = mutableListOf()
         generateValue()
         return firstReel
     }

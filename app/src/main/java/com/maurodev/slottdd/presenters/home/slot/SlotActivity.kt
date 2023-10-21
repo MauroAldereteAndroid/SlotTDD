@@ -1,22 +1,35 @@
 package com.maurodev.slottdd.presenters.home.slot
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import com.maurodev.slottdd.R
-import com.maurodev.slottdd.domain.SlotManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
+import com.maurodev.slottdd.databinding.ActivitySlotBinding
+import com.maurodev.slottdd.presenters.home.slot.slotComponent.ReelAdapter
 
 class SlotActivity : AppCompatActivity() {
+
+    private lateinit var _vm: SlotViewModel
+    private lateinit var _binding: ActivitySlotBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_slot)
+        _binding = ActivitySlotBinding.inflate(layoutInflater)
+        setContentView(_binding.root)
+        _vm = ViewModelProvider(this)[SlotViewModel::class.java]
 
-        // Temp
-        val button = findViewById<Button>(R.id.button_spin)
-        val slot = SlotManager()
-        button.setOnClickListener {
-            val result = slot.executeSlot()
-            println(result)
+        observers()
+
+        _binding.buttonSpin.setOnClickListener { executeSlot() }
+    }
+
+    private fun observers() {
+        _vm.listReelLiveData.observe(this) {
+            val reelAdapter = ReelAdapter(_binding.layoutSlot)
+            reelAdapter.addValuesToReel(it)
+            println(it)
         }
+    }
+
+    private fun executeSlot() {
+        _vm.executeSlot()
     }
 }

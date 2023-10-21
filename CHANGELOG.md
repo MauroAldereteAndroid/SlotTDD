@@ -1,5 +1,8 @@
 
-## 27/10/07
+## 21/10/23
+- Mostrar valores del slot en la UI
+
+## 17/10/23
 - Inicio de la logica slot.
 - Valores del slot.
 
