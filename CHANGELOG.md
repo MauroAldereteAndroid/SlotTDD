@@ -1,3 +1,5 @@
+## 22/10/23
+- Implementation localStorage room
 
 ## 21/10/23
 - Mostrar valores del slot en la UI

@@ -24,6 +24,9 @@ class HomeFragment : Fragment() {
         _vm = ViewModelProvider(this)[HomeViewModel::class.java]
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
+        // Init room
+        _vm.init(_binding?.root?.context)
+
         // open slot
         binding.buttonStartSlot.setOnClickListener { initSlot() }
 
