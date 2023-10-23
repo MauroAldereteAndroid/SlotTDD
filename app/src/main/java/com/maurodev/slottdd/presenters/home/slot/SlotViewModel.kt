@@ -12,6 +12,8 @@ class SlotViewModel : ViewModel() {
 
     /**
      * Funcion para ejecutar el slot
+     * De aca va al sistema de premios y
+     * es el sistema de premios quien comunica a wallet el resultado.
      */
     fun executeSlot() {
         val result = slotManager.executeSlot()
