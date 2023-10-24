@@ -1,4 +1,4 @@
-package com.maurodev.slottdd.domain
+package com.maurodev.slottdd.domain.slot
 
 import kotlin.random.Random
 

@@ -3,7 +3,7 @@ package com.maurodev.slottdd.presenters.home.slot.slotComponent
 import android.view.Gravity
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.maurodev.slottdd.data.SlotValue
+import com.maurodev.slottdd.data.slot.SlotValue
 
 class ReelAdapter(private val mainLayout: LinearLayout) {
 

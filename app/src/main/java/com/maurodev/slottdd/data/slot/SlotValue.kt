@@ -1,4 +1,4 @@
-package com.maurodev.slottdd.data
+package com.maurodev.slottdd.data.slot
 
 /**
  * Enumerado con los valores posibles.

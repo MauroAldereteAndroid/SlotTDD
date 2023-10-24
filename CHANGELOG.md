@@ -1,5 +1,6 @@
 ## 22/10/23
 - Implementacion de logica wallet
+- Sistema de premios slot (POC)
 
 ## 22/10/23
 - Implementation localStorage room

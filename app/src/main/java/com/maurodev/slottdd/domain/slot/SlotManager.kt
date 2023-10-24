@@ -1,4 +1,4 @@
-package com.maurodev.slottdd.domain
+package com.maurodev.slottdd.domain.slot
 
 /**
  * Esta clase se encarga de manejar la logica e implementacion del slot.
