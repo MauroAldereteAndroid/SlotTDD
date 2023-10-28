@@ -1,4 +1,8 @@
 ## 28/10/23
+- Refresco de ui con las modificaciones de la wallet
+- Add slider Component for bet selection
+
+## 28/10/23
 - Mejora de premios slot
 
 ## 22/10/23
