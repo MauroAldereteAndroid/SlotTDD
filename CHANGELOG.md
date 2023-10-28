@@ -1,3 +1,6 @@
+## 28/10/23
+- Mejora de premios slot
+
 ## 22/10/23
 - Implementacion de logica wallet
 - Sistema de premios slot (POC)

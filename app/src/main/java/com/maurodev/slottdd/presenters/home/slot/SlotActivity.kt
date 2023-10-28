@@ -19,6 +19,7 @@ class SlotActivity : AppCompatActivity() {
         observers()
 
         _binding.buttonSpin.setOnClickListener { executeSlot() }
+        _binding.buttonFreeCoins.setOnClickListener { freeCoins() }
     }
 
     private fun observers() {
@@ -30,6 +31,10 @@ class SlotActivity : AppCompatActivity() {
     }
 
     private fun executeSlot() {
-        _vm.executeSlot()
+        _vm.executeSlot(_binding.root.context)
+    }
+
+    private fun freeCoins() {
+        _vm.obtainFreeCoins(_binding.root.context)
     }
 }
